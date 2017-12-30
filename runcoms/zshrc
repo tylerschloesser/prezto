@@ -11,3 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+bindkey -v
+bindkey "^p" up-line-or-search
+bindkey "^N" down-line-or-search
+bindkey "^R" history-incremental-search-backward
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
